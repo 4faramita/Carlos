@@ -465,6 +465,13 @@ public class CameraService {
                 if let image = self?.photo?.image {
                     OCR.recognize(image) { (calorie: Int) in
                         print(calorie)
+                        self?.alertError = AlertError(
+                            title: "\(calorie) \(Identifier.Unit.kcal)",
+                            secondaryButtonTitle: nil,
+                            primaryAction: nil,
+                            secondaryAction: nil
+                        )
+                        self?.shouldShowAlertView = true
                         UIPasteboard.general.string = "\(calorie)"
                     }
                 }
