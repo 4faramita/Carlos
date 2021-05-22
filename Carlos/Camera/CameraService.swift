@@ -95,6 +95,7 @@ public class CameraService {
 //    14
     // Communicate with the session and other session objects on this queue.
     private let sessionQueue = DispatchQueue(label: "session queue")
+//    private let sessionSampleBufferQueue = DispatchQueue(label: "session sample buffer queue")
     
     @objc dynamic var videoDeviceInput: AVCaptureDeviceInput!
     
@@ -106,6 +107,11 @@ public class CameraService {
     private let photoOutput = AVCapturePhotoOutput()
     
     private var inProgressPhotoCaptureDelegates = [Int64: PhotoCaptureProcessor]()
+
+    // MARK: Capturing Video Feed
+
+    private let videoOutput = AVCaptureVideoDataOutput()
+    private let frameExtractor = FrameExtractor()
     
     // MARK: KVO and Notifications Properties
     
@@ -216,7 +222,19 @@ public class CameraService {
             session.commitConfiguration()
             return
         }
-        
+
+        // Add the video output.
+        if session.canAddOutput(videoOutput) {
+            session.addOutput(videoOutput)
+
+            videoOutput.setSampleBufferDelegate(frameExtractor, queue: sessionQueue)  // FIXME: another queue?
+        } else {
+            print("Could not add video output to the session")
+            setupResult = .configurationFailed
+            session.commitConfiguration()
+            return
+        }
+
         // Add the photo output.
         if session.canAddOutput(photoOutput) {
             session.addOutput(photoOutput)
