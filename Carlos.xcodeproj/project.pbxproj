@@ -8,18 +8,32 @@
 
 /* Begin PBXBuildFile section */
 		4A22223A2651159400E676ED /* CarlosApp.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4A2222392651159400E676ED /* CarlosApp.swift */; };
-		4A22223C2651159400E676ED /* ContentView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4A22223B2651159400E676ED /* ContentView.swift */; };
 		4A22223E2651159600E676ED /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 4A22223D2651159600E676ED /* Assets.xcassets */; };
 		4A2222412651159600E676ED /* Preview Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 4A2222402651159600E676ED /* Preview Assets.xcassets */; };
+		4A222249265115CE00E676ED /* OCR.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4A222248265115CE00E676ED /* OCR.swift */; };
+		4A4D7C532654056E007CBB8D /* CameraService.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4A4D7C4C2654056D007CBB8D /* CameraService.swift */; };
+		4A4D7C542654056E007CBB8D /* ContentView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4A4D7C4D2654056D007CBB8D /* ContentView.swift */; };
+		4A4D7C552654056E007CBB8D /* CameraPreview.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4A4D7C4E2654056D007CBB8D /* CameraPreview.swift */; };
+		4A4D7C562654056E007CBB8D /* ImageResizer.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4A4D7C4F2654056D007CBB8D /* ImageResizer.swift */; };
+		4A4D7C572654056E007CBB8D /* CameraService+Extensions.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4A4D7C502654056D007CBB8D /* CameraService+Extensions.swift */; };
+		4A4D7C582654056E007CBB8D /* PhotoCaptureProcessor.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4A4D7C512654056D007CBB8D /* PhotoCaptureProcessor.swift */; };
+		4A4D7C592654056E007CBB8D /* CameraService+Enums.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4A4D7C522654056E007CBB8D /* CameraService+Enums.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
 		4A2222362651159400E676ED /* Carlos.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = Carlos.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		4A2222392651159400E676ED /* CarlosApp.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CarlosApp.swift; sourceTree = "<group>"; };
-		4A22223B2651159400E676ED /* ContentView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ContentView.swift; sourceTree = "<group>"; };
 		4A22223D2651159600E676ED /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		4A2222402651159600E676ED /* Preview Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = "Preview Assets.xcassets"; sourceTree = "<group>"; };
 		4A2222422651159600E676ED /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		4A222248265115CE00E676ED /* OCR.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = OCR.swift; sourceTree = "<group>"; };
+		4A4D7C4C2654056D007CBB8D /* CameraService.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = CameraService.swift; sourceTree = "<group>"; };
+		4A4D7C4D2654056D007CBB8D /* ContentView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = ContentView.swift; path = ../../SwiftCamera/SwiftCamera/ContentView.swift; sourceTree = "<group>"; };
+		4A4D7C4E2654056D007CBB8D /* CameraPreview.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = CameraPreview.swift; sourceTree = "<group>"; };
+		4A4D7C4F2654056D007CBB8D /* ImageResizer.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ImageResizer.swift; sourceTree = "<group>"; };
+		4A4D7C502654056D007CBB8D /* CameraService+Extensions.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = "CameraService+Extensions.swift"; sourceTree = "<group>"; };
+		4A4D7C512654056D007CBB8D /* PhotoCaptureProcessor.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = PhotoCaptureProcessor.swift; sourceTree = "<group>"; };
+		4A4D7C522654056E007CBB8D /* CameraService+Enums.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = "CameraService+Enums.swift"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -52,8 +66,10 @@
 		4A2222382651159400E676ED /* Carlos */ = {
 			isa = PBXGroup;
 			children = (
+				4A4D7C5A26540592007CBB8D /* Camera */,
+				4A4D7C4D2654056D007CBB8D /* ContentView.swift */,
 				4A2222392651159400E676ED /* CarlosApp.swift */,
-				4A22223B2651159400E676ED /* ContentView.swift */,
+				4A222248265115CE00E676ED /* OCR.swift */,
 				4A22223D2651159600E676ED /* Assets.xcassets */,
 				4A2222422651159600E676ED /* Info.plist */,
 				4A22223F2651159600E676ED /* Preview Content */,
@@ -67,6 +83,19 @@
 				4A2222402651159600E676ED /* Preview Assets.xcassets */,
 			);
 			path = "Preview Content";
+			sourceTree = "<group>";
+		};
+		4A4D7C5A26540592007CBB8D /* Camera */ = {
+			isa = PBXGroup;
+			children = (
+				4A4D7C4E2654056D007CBB8D /* CameraPreview.swift */,
+				4A4D7C4C2654056D007CBB8D /* CameraService.swift */,
+				4A4D7C522654056E007CBB8D /* CameraService+Enums.swift */,
+				4A4D7C502654056D007CBB8D /* CameraService+Extensions.swift */,
+				4A4D7C4F2654056D007CBB8D /* ImageResizer.swift */,
+				4A4D7C512654056D007CBB8D /* PhotoCaptureProcessor.swift */,
+			);
+			path = Camera;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -138,7 +167,14 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				4A22223C2651159400E676ED /* ContentView.swift in Sources */,
+				4A4D7C532654056E007CBB8D /* CameraService.swift in Sources */,
+				4A4D7C542654056E007CBB8D /* ContentView.swift in Sources */,
+				4A4D7C562654056E007CBB8D /* ImageResizer.swift in Sources */,
+				4A222249265115CE00E676ED /* OCR.swift in Sources */,
+				4A4D7C552654056E007CBB8D /* CameraPreview.swift in Sources */,
+				4A4D7C592654056E007CBB8D /* CameraService+Enums.swift in Sources */,
+				4A4D7C582654056E007CBB8D /* PhotoCaptureProcessor.swift in Sources */,
+				4A4D7C572654056E007CBB8D /* CameraService+Extensions.swift in Sources */,
 				4A22223A2651159400E676ED /* CarlosApp.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -269,7 +305,7 @@
 				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
 				CODE_SIGN_STYLE = Automatic;
 				DEVELOPMENT_ASSET_PATHS = "\"Carlos/Preview Content\"";
-				DEVELOPMENT_TEAM = 36LYS4JA76;
+				DEVELOPMENT_TEAM = JUQ4EUY679;
 				ENABLE_PREVIEWS = YES;
 				INFOPLIST_FILE = Carlos/Info.plist;
 				IPHONEOS_DEPLOYMENT_TARGET = 14.0;
@@ -277,7 +313,7 @@
 					"$(inherited)",
 					"@executable_path/Frameworks",
 				);
-				PRODUCT_BUNDLE_IDENTIFIER = us.jihe.Carlos;
+				PRODUCT_BUNDLE_IDENTIFIER = us.jihe.CarlosApp;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SWIFT_VERSION = 5.0;
 				TARGETED_DEVICE_FAMILY = "1,2";
@@ -291,7 +327,7 @@
 				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
 				CODE_SIGN_STYLE = Automatic;
 				DEVELOPMENT_ASSET_PATHS = "\"Carlos/Preview Content\"";
-				DEVELOPMENT_TEAM = 36LYS4JA76;
+				DEVELOPMENT_TEAM = JUQ4EUY679;
 				ENABLE_PREVIEWS = YES;
 				INFOPLIST_FILE = Carlos/Info.plist;
 				IPHONEOS_DEPLOYMENT_TARGET = 14.0;
@@ -299,7 +335,7 @@
 					"$(inherited)",
 					"@executable_path/Frameworks",
 				);
-				PRODUCT_BUNDLE_IDENTIFIER = us.jihe.Carlos;
+				PRODUCT_BUNDLE_IDENTIFIER = us.jihe.CarlosApp;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SWIFT_VERSION = 5.0;
 				TARGETED_DEVICE_FAMILY = "1,2";
