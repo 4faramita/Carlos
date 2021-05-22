@@ -311,7 +311,7 @@ public class CameraService {
             }
             
             DispatchQueue.main.async {
-//                MARK: Here enable capture button due to successfull setup
+//                MARK: Here enable capture button due to successful setup
                 self.isCameraButtonDisabled = false
             }
         }
